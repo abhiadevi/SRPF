@@ -1,103 +1,113 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function ReleasePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <main className="min-h-screen bg-white flex items-start justify-center px-5 pt-[50px] pb-[50px]">
+      <div className="text-center md:text-left flex flex-col items-center">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/shoflr-logo.svg"
+          alt="Shoflr Logo"
+          width={150}
+          height={40}
+          className="w-[3.75rem] h-auto"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="flex items-center gap-x-2 mt-[20px]">
+          <div className="border-3 border-[#2B4C7E] rounded-[15px] px-1.5 py-0 text-[20px] font-bold text-[#2B4C7E] font-manrope inline-flex items-center justify-center">
+            2026
+          </div>
+          <p className="text-[20px] font-semibold font-manrope text-black">
+            January release
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <h1 className="mt-[20px] text-black font-medium font-manrope text-center leading-[1.2] text-[45px]">
+          <span className="block">Now you can</span>
+          <span className="block">do more with</span>
+          <span className="block text-[#2B4C7E]">Shoflr</span>
+        </h1>
+        <p className="mt-5 text-center max-w-xl font-manrope text-[15px] text-gray-500 leading-[1.35] font-normal">
+          Artificial Intelligence that works for you.<br />
+          Available worldwide — January 2026.
+        </p>
+        <div className="mt-10">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/hero-image.png"
+            alt="Shoflr hero image"
+            width={1200}
+            height={800}
+            className="rounded-xl"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+        <h2 className="mt-10 font-manrope font-normal text-black text-center text-[20px]">
+          Stay ahead of the launch.
+        </h2>
+        <p className="mt-5 font-manrope font-normal text-[15px] text-gray-500 text-center max-w-xl leading-[1.3]">
+          Get early access to updates,<br />
+          feature announcements, and exclusive<br />
+          launch-day offers.
+        </p>
+        <p className="mt-5 font-manrope font-normal text-sm text-gray-500 text-center max-w-xl">
+          <span className="text-black">* Please note:</span> We're not currently collecting<br />
+          emails as we're still in development.<br />
+          Once we're ready, we'll share updates here<br />
+          — thank you for your patience and interest!
+        </p>
+        <div className="mt-10 w-[250px] h-[50px] rounded-[15px] border border-black flex items-center justify-center text-base font-manrope text-gray-500">
+          example@email.com
+        </div>
+        <div className="mt-5 w-[250px] h-[50px] rounded-[50px] bg-[#2B4C7E] relative z-10 flex items-center justify-center text-black text-[15px] font-manrope font-normal border border-black">
+          Join the wait-list
+        </div>
+        <p className="mt-10 font-manrope text-[10px] text-gray-500 text-center max-w-lg">
+          By joining the wait-list, you agree to receive email<br />
+          communications from us related to our website launch and<br />
+          updates. We respect your privacy. You can unsubscribe at any<br />
+          time. View our Privacy Policy.
+        </p>
+        <h2 className="mt-15 font-manrope font-normal text-black text-center text-[20px]">
+          Your questions, answered
+        </h2>
+        <div className="w-full max-w-4xl mt-5">
+          <p className="text-left font-manrope font-normal text-[15px] text-black pl-5">
+            Release notice:
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[15px] text-gray-500 font-normal text-left">
+            The projected release date of January 2026 is an estimated timeline and may be subject to change. While we're working hard to meet this goal, unforeseen delays are always a possibility.
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[15px] text-gray-500 font-normal text-left">
+            If any changes occur, updates will be posted on our website, Instagram [@shoflr] and communicated via email to those who have subscribed to our wait-list.
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[15px] text-black font-normal text-left">
+            Investment and partnership:
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[15px] text-gray-500 font-normal text-left">
+            We are open to welcoming interest from individuals or organisations seeking to collaborate with or invest in our venture.
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[15px] text-gray-500 font-normal text-left">
+            This includes, but is not limited to, opportunities in angel investment, venture capital, crowdfunding, or strategic partnerships.
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[15px] text-gray-500 font-normal text-left">
+            If you are interested in working with us, please contact us via Instagram [@shoflr], and a member of our team will get in touch with you directly.
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[15px] text-black font-normal text-left">
+            Careers:
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[15px] text-gray-500 font-normal text-left">
+            If you're passionate about Artificial Intelligence and interested in joining our team, we'd love to hear from you.
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[15px] text-gray-500 font-normal text-left">
+            For career inquiries, please message us on Instagram [@shoflr], and someone from our hiring team will follow up with more information.
+          </p>
+          <p className="mt-15 pl-5 pr-5 font-manrope text-[10px] text-gray-500 font-normal text-center">
+            © [2025] [Shoflr]. All rights reserved.
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[10px] text-gray-500 font-normal text-center">
+            All content, designs, text, graphics, logos, and other materials on this website are the intellectual property of [Shoflr] and are protected by copyright laws worldwide. Unauthorised use, reproduction, or distribution of any materials without prior written permission is strictly prohibited.
+          </p>
+          <p className="mt-5 pl-5 pr-5 font-manrope text-[10px] text-gray-500 font-normal text-center">
+            We are proud to partner with [Adevi's Children Foundation], a charitable organisation dedicated to empowering children around the world by providing equal access to opportunities, education, and support. As part of our commitment to making a positive impact, a portion of our profits is donated to support their vital work and initiatives.
+          </p>
+        </div>
+      </div>
+    </main>
   );
 }
